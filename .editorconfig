@@ -13,3 +13,11 @@ trim_trailing_whitespace = false
 
 [*.yml]
 indent_size = 2
+# coding styles between different editors and IDEs
+# editorconfig.org
+
+[*.{js,html,blade.php,css,scss}]
+indent_style = space
+indent_size = 4
+
+
