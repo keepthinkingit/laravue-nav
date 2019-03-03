@@ -49006,6 +49006,7 @@ var app = new Vue({
 /***/ (function(module, exports, __webpack_require__) {
 
 window._ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
+window._ = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module 'bulma'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
  * for JavaScript based Bootstrap features such as modals and tabs. This
