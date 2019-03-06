@@ -1,94 +1,206 @@
-
 //// Fonts
 //@import url('https://fonts.googleapis.com/css?family=Nunito');
-
 // Variables
 @import 'variables';
-
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-.navbar-laravel {
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-}
-
-@charset "utf-8";
 
 /* universal */
 
-//background-image { linear-gradient(19deg, rgb(62, 236, 172) 0px, rgb(238, 116, 225) 100%);}
+//background-image {
+//    linear-gradient(19deg, rgb(62, 236, 172) 0px, rgb(238, 116, 225) 100%);
+//}
 
-a, abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, ul, var, video { margin: 0px; padding: 0px; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+a, abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, ul, var, video {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
 
-html { min-height: 100%; overflow-x: hidden; text-size-adjust: 100%; }
+html , body {
+    height: 100%;   //页面背景色全部填充, 包括 margin:0 padding:0
+}
 
-body { min-height: 100%; -webkit-font-smoothing: antialiased; font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", Arial, "Microsoft YaHei", "Helvetica Neue", sans-serif; font-size: 14px; color: rgb(51, 51, 51); background-color: rgb(62, 236, 172); background-image: linear-gradient(19deg, rgb(62, 236, 172) 0px, rgb(238, 116, 225) 100%); overflow: hidden; }
+html {
+    min-height: 100%;
+    overflow-x: hidden;
+    text-size-adjust: 100%;
+    background: transparent;
+    //background-color: blue;
+}
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+body {
+    min-height: 100%;
+    -webkit-font-smoothing: antialiased;
+    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", Arial, "Microsoft YaHei", "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+    background-color: rgb(62, 236, 172);
+    background-image: linear-gradient(19deg, rgb(62, 236, 172) 0px, rgb(238, 116, 225) 100%);
+    overflow: hidden;
+}
 
-h1 { font-size: 18px; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
 
-h2 { font-size: 16px; }
+h1 {
+    font-size: 18px;
+}
 
-h3 { font-size: 14px; }
+h2 {
+    font-size: 16px;
+}
 
-button, h4, h5, h6, input, select, textarea { font-size: 100%; }
+h3 {
+    font-size: 14px;
+}
 
-address, cite, dfn, em, i, var { font-style: normal; }
+button, h4, h5, h6, input, select, textarea {
+    font-size: 100%;
+}
 
-small { font-size: 12px; }
+address, cite, dfn, em, i, var {
+    font-style: normal;
+}
 
-li, ol, ul { list-style: none; }
+small {
+    font-size: 12px;
+}
 
-a, a:link { text-decoration: none; }
+li, ol, ul {
+    list-style: none;
+}
 
-abbr[title], acronym[title] { border-bottom: 1px dotted; cursor: help; }
+a, a:link {
+    text-decoration: none;
+}
 
-q::after, q::before { content: ""; }
+abbr[title], acronym[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
 
-legend { color: rgb(0, 0, 0); }
+q::after, q::before {
+    content: "";
+}
 
-fieldset, iframe, img { border: none; }
+legend {
+    color: rgb(0, 0, 0);
+}
 
-table { border-collapse: collapse; border-spacing: 0px; }
+fieldset, iframe, img {
+    border: none;
+}
 
-hr { border: none; height: 1px; }
+table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
 
-button, input[type="password"], input[type="reset"], input[type="submit"], input[type="text"] { -webkit-appearance: none; outline: 0px; border: 1px solid rgb(225, 225, 225); }
+hr {
+    border: none;
+    height: 1px;
+}
 
-textarea { resize: none; outline: 0px; -webkit-appearance: none; }
+button, input[type="password"], input[type="reset"], input[type="submit"], input[type="text"] {
+    -webkit-appearance: none;
+    outline: 0px;
+    border: 1px solid rgb(225, 225, 225);
+}
 
-button, input[type="reset"], input[type="submit"] { cursor: pointer; outline: 0px; }
+textarea {
+    resize: none;
+    outline: 0px;
+    -webkit-appearance: none;
+}
 
-.user-select-none { user-select: none; }
+button, input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+    outline: 0px;
+}
 
-.white-space-nowrap { white-space: nowrap; }
+.user-select-none {
+    user-select: none;
+}
 
-.text-align-center { text-align: center; }
+.white-space-nowrap {
+    white-space: nowrap;
+}
 
-.text-align-left { text-align: left; }
+.text-align-center {
+    text-align: center;
+}
 
-.text-align-right { text-align: right; }
+.text-align-left {
+    text-align: left;
+}
 
-.border-none { border: none; }
+.text-align-right {
+    text-align: right;
+}
 
-.pointer-events-none { pointer-events: none; }
+.border-none {
+    border: none;
+}
 
-.overflow-hidden { overflow: hidden; }
+.pointer-events-none {
+    pointer-events: none;
+}
 
-.container { width: 1000px; margin: 0px auto; }
+.overflow-hidden {
+    overflow: hidden;
+}
 
-.has-ripple { position: relative; overflow: hidden; transform: translate3d(0px, 0px, 0px); }
+.container {
+    //width: 1000px;
+    //margin: 0px auto;
+}
 
-.ripple { display: block; position: absolute; pointer-events: none; border-radius: 50%; transform: scale(0); background: rgb(255, 255, 255); opacity: 1; }
+.has-ripple {
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0px, 0px, 0px);
+}
 
-.ripple-animate { animation: ripple 0s ease 0s 1 normal none running; }
+.ripple {
+    display: block;
+    position: absolute;
+    pointer-events: none;
+    border-radius: 50%;
+    transform: scale(0);
+    background: rgb(255, 255, 255);
+    opacity: 1;
+}
+
+.ripple-animate {
+    animation: ripple 0s ease 0s 1 normal none running;
+}
 
 @-webkit-keyframes ripple {
-    100% { opacity: 0; transform: scale(2); }
+    100% {
+        opacity: 0;
+        transform: scale(2);
+    }
 }
 
 @keyframes ripple {
-    100% { opacity: 0; transform: scale(2); }
+    100% {
+        opacity: 0;
+        transform: scale(2);
+    }
+}
+
+#app {
+    margin-top: 50px;
+}
+
+.sidebar {
+    background-color: red;
+}
+
+.main {
+    //margin-right: 55px !important;
 }

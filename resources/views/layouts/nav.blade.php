@@ -1,5 +1,5 @@
 @extends('layouts.app')
 
 @section('nav$')
-helpless
+none
 @endsection

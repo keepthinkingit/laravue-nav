@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ app()->getLocale() }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
     <meta name="renderer" content="webkit">
@@ -20,8 +20,7 @@
 <body>
 <div id="app">
     {{--<img src="{{ asset('svg/top.svg') }}" alt="top" class="scroll-top">--}}
-    {{--@include('layouts.nav')--}}
-    This is how we live!
+
     @yield('content')
     @yield('_footer')
 </div>

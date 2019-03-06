@@ -10655,11 +10655,6 @@ a.text-dark:focus {
   }
 }
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-}
-
 /* universal */
 
 a,
@@ -10738,6 +10733,11 @@ video {
   -webkit-tap-highlight-color: transparent;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 html {
   min-height: 100%;
   overflow-x: hidden;
@@ -10745,6 +10745,7 @@ html {
      -moz-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
           text-size-adjust: 100%;
+  background: transparent;
 }
 
 body {
@@ -10907,11 +10908,6 @@ input[type=submit] {
   overflow: hidden;
 }
 
-.container {
-  width: 1000px;
-  margin: 0px auto;
-}
-
 .has-ripple {
   position: relative;
   overflow: hidden;
@@ -10949,5 +10945,13 @@ input[type=submit] {
     -webkit-transform: scale(2);
             transform: scale(2);
   }
+}
+
+#app {
+  margin-top: 50px;
+}
+
+.sidebar {
+  background-color: red;
 }
 

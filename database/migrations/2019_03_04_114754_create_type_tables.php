@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateNavsTable extends Migration
+class CreateTypeTables extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,9 @@ class CreateNavsTable extends Migration
      */
     public function up()
     {
-        Schema::create('navs', function (Blueprint $table) {
+        Schema::create('type_tables', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('type')->unique();
             $table->timestamps();
         });
     }
@@ -26,6 +27,6 @@ class CreateNavsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('navs');
+        Schema::dropIfExists('type_tables');
     }
 }
