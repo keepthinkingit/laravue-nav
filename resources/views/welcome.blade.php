@@ -8,39 +8,25 @@
     <div class="columns is-multiline h100" id="content">
         <div class="column is-11 is-offset-1 pr h95">
             <div class="columns pr h100" >
-                <div class="column is-2 sidebar pr h95">
+                <div class="column is-2 sidebar pr h70">
+
                     <aside class="menu h100">
                         <p class="menu-label">
-                            <a href="#type1">type1</a>
+                            <a href="#type1" class="button is-info is-active">type1</a>
                         </p>
                         <ul class="menu-list">
                             <li><a href="#website1">网址1</a></li>
                             <li><a>Customers</a></li>
                         </ul>
                         <p class="menu-label">
-                            Administration
+                            <a href="#type2" class="button is-info is-active">type2</a>
                         </p>
                         <ul class="menu-list">
-                            <li><a>Team Settings</a></li>
-                            <li>
-                                <a class="is-active">Manage Your Team</a>
-                                <ul>
-                                    <li><a>Members</a></li>
-                                    <li><a>Plugins</a></li>
-                                    <li><a>Add a member</a></li>
-                                </ul>
-                            </li>
-                            <li><a>Invitations</a></li>
-                            <li><a>Cloud Storage Environment Settings</a></li>
-                            <li><a>Authentication</a></li>
                         </ul>
                         <p class="menu-label">
-                            Transactions
+                            <a href="#type3" class="button is-info is-active">type3</a>
                         </p>
                         <ul class="menu-list">
-                            <li><a>Payments</a></li>
-                            <li><a>Transfers</a></li>
-                            <li><a>Balance</a></li>
                         </ul>
 
                         <div class="tile like">
@@ -52,8 +38,8 @@
 
                 <div class="main column is-9 h85">
 
-                    <div class="column is-full">
-                        <p id="type1" class="has-text-centered">Type1</p>
+                    <div class="column is-full" id="type1">
+                        <p  class="has-text-centered">Type1</p>
                     </div>
                     <hr>
 

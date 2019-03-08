@@ -1,4 +1,4 @@
-<div class="columns">
+<div class="columns navbar is-fixed-top">
     <div class="tabs column is-offset-2 is-centered is-toggle is-medium is-boxed">
         <ul>
             <li class="is-active">

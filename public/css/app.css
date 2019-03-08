@@ -19217,6 +19217,11 @@ html {
       -ms-text-size-adjust: 100%;
           text-size-adjust: 100%;
   background: transparent;
+  overflow: -moz-scrollbars-none;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 body {
@@ -19228,6 +19233,10 @@ body {
   background-color: #3eecac;
   background-image: linear-gradient(19deg, #e282ec 0px, #a8ee8e 100%);
   overflow: hidden;
+}
+
+.element::-webkit-scrollbar {
+  width: 0 !important;
 }
 
 article,
@@ -19270,6 +19279,10 @@ h3 {
 
 .h85 {
   max-height: 95%;
+}
+
+.h70 {
+  height: 75%;
 }
 
 button,
@@ -19447,12 +19460,21 @@ input[type=submit] {
 .main {
   height: 100%;
   overflow-y: auto;
-  position: absolute;
+  position: fixed;
   right: 8.3%;
-  top: 0;
+  top: 9%;
+}
+
+.sidebar {
+  position: fixed;
+  top: 10%;
 }
 
 .like {
   height: 21px;
+}
+
+.card .title {
+  font-size: 15px;
 }
 

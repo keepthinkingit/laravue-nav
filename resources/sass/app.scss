@@ -34,6 +34,12 @@ html {
     text-size-adjust: 100%;
     background: transparent;
     //background-color: blue;
+    overflow:-moz-scrollbars-none;
+}
+
+//chrome 隐藏滚动条
+::-webkit-scrollbar {
+    display: none;
 }
 
 body {
@@ -46,6 +52,10 @@ body {
     background-image: linear-gradient(19deg, rgb(226, 130, 236) 0px, rgb(168, 238, 142) 100%);
     //background-image: radial-gradient(19deg, rgb(62, 236, 172) 0px, rgb(238, 116, 225) 100%);
     overflow: hidden;
+}
+
+.element::-webkit-scrollbar {
+    width: 0 !important
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -78,6 +88,10 @@ h3 {
 
 .h85 {
     max-height: 95%;
+}
+
+.h70 {
+    height: 75%;
 }
 
 button, h4, h5, h6, input, select, textarea {
@@ -216,6 +230,14 @@ button, input[type="reset"], input[type="submit"] {
     }
 }
 
+//#toptab {
+//    position: fixed;
+//    top: 0;
+//    left: 0;
+//    right: 0;
+//    z-index: 30;
+//}
+
 #app {
     margin-top: 21px;
     height: 98%;
@@ -227,6 +249,7 @@ button, input[type="reset"], input[type="submit"] {
 
 #content {
     //position: relative;
+    //top: 10%;
     //height: 100%;
 }
 
@@ -234,16 +257,23 @@ button, input[type="reset"], input[type="submit"] {
     //margin-right: 55px !important;
     height: 100%;
     overflow-y: auto;
-    position: absolute;
+    position: fixed;
     right: 8.3%;
-    top: 0;
+    top: 9%;
 }
 
 .sidebar {
     //background-color: red;
-    //position:relative;
+    position:fixed;
+    top: 10%;
 }
 
 .like {
     height: 21px;
+}
+
+.card {
+    .title {
+        font-size: 15px;
+    }
 }
