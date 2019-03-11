@@ -16,7 +16,11 @@ Route::get('/', function () {
 });
 
 Route::get('home','HomeController@index')->name('home');
-
+Route::get('create','NavsController@create')->name('create');
+Route::post('post','NavsControlle@store')->name('store');
+Route::get('edit','NavsController@show')->name('edit');
+Route::patch('update','NavsController@update')->name('update');
+Route::get('delete','NavsController@destroy')->name('delete');
 
 Route::get('test',function(){
     return view('test');

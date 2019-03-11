@@ -1,5 +1,5 @@
 <div class="columns navbar is-fixed-top">
-    <div class="tabs column is-offset-2 is-centered is-toggle is-medium is-boxed">
+    <div class="tabs column is-offset-1 is-centered is-toggle is-medium is-boxed">
         <ul>
             <li class="is-active">
                 <a>

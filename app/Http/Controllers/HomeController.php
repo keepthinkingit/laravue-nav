@@ -6,6 +6,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Category;
+use App\Site;
+use App\Type;
 
 class HomeController extends Controller
 {
@@ -13,7 +16,11 @@ class HomeController extends Controller
 
     public function index()
     {
-        return view('welcome');
+        $tab = Category::get();
+        $types = Type::get();
+        $sites = Site::get();
+
+        return view('welcome',compact('tab,types,sites'));
     }
 
     public function test()

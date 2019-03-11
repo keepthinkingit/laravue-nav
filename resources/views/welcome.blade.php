@@ -47,10 +47,10 @@
                         <div class="column is-one-quarter">
                             <div class="card">
                                 <div class="card-content">
-                                    <p class="title" id="website1">
+                                    <p class="title has-text-centered" id="website1">
                                         “the website1 title.”
                                     </p>
-                                    <p class="subtitle">
+                                    <p class="subtitle has-text-centered has-text-centered">
                                         Jeff Atwood
                                     </p>
                                 </div>
@@ -66,10 +66,10 @@
                         <div class="column is-one-quarter">
                             <div class="card">
                                 <div class="card-content">
-                                    <p class="title">
+                                    <p class="title has-text-centered">
                                         “the website title.”
                                     </p>
-                                    <p class="subtitle">
+                                    <p class="subtitle has-text-centered">
                                         Jeff Atwood
                                     </p>
                                 </div>
@@ -85,10 +85,10 @@
                         <div class="column is-one-quarter">
                             <div class="card">
                                 <div class="card-content">
-                                    <p class="title">
+                                    <p class="title has-text-centered">
                                         “the website title.”
                                     </p>
-                                    <p class="subtitle">
+                                    <p class="subtitle has-text-centered">
                                         Jeff Atwood
                                     </p>
                                 </div>
@@ -104,10 +104,10 @@
                         <div class="column is-one-quarter">
                             <div class="card">
                                 <div class="card-content">
-                                    <p class="title">
+                                    <p class="title has-text-centered">
                                         “the website title.”
                                     </p>
-                                    <p class="subtitle">
+                                    <p class="subtitle has-text-centered">
                                         Jeff Atwood
                                     </p>
                                 </div>
@@ -123,7 +123,7 @@
                     </div>
 
                     <div class="column is-full">
-                        <p id="type2">Type2</p>
+                        <p id="type2" class="has-text-centered">Type2</p>
                     </div>
                     <hr>
 
@@ -131,10 +131,10 @@
                         <div class="column is-one-quarter">
                             <div class="card">
                                 <div class="card-content">
-                                    <p class="title" id="website2">
+                                    <p class="title has-text-centered" id="website2">
                                         “the website2 title.”
                                     </p>
-                                    <p class="subtitle">
+                                    <p class="subtitle has-text-centered">
                                         Jeff Atwood
                                     </p>
                                 </div>
@@ -150,7 +150,7 @@
                     </div>
 
                     <div class="column is-full">
-                        <p id="type3">Type3</p>
+                        <p id="type3" class="has-text-centered">Type3</p>
                     </div>
                     <hr>
 
@@ -158,10 +158,10 @@
                         <div class="column is-one-quarter">
                             <div class="card">
                                 <div class="card-content">
-                                    <p class="title" id="website3">
+                                    <p class="title has-text-centered" id="website3">
                                         “the website3 title.”
                                     </p>
-                                    <p class="subtitle">
+                                    <p class="subtitle has-text-centered">
                                         Jeff Atwood
                                     </p>
                                 </div>
@@ -177,7 +177,7 @@
                     </div>
 
                     <div class="column is-full">
-                        <p id="type4">Type4</p>
+                        <p id="type4" class="has-text-centered">Type4</p>
                     </div>
                     <hr>
 
@@ -185,10 +185,10 @@
                         <div class="column is-one-quarter">
                             <div class="card">
                                 <div class="card-content">
-                                    <p class="title" id="website4">
+                                    <p class="title has-text-centered" id="website4">
                                         “the website4 title.”
                                     </p>
-                                    <p class="subtitle">
+                                    <p class="subtitle has-text-centered">
                                         Jeff Atwood
                                     </p>
                                 </div>

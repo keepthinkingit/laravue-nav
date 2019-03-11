@@ -19474,7 +19474,42 @@ input[type=submit] {
   height: 21px;
 }
 
+.card .card-content {
+  padding: 14px;
+}
+
 .card .title {
-  font-size: 15px;
+  font-size: 22px;
+}
+
+.card .subtitle {
+  font-size: 18px;
+}
+
+.card .card-footer {
+  padding: 6px 10px;
+}
+
+.card .card-footer-item {
+  padding: 1px;
+}
+
+/* create tab */
+
+.create-card {
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.11);
+}
+
+.card-title {
+  background-color: #2484d2;
+  padding: 2rem;
+}
+
+.card-title h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
